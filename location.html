@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amaraye Trading FZE LLC - Home</title>
+  <title>Amaraye Trading FZE LLC - Locations</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #1a1a1a;
+      background-color: #000000;
       color: #e5e7eb;
       margin: 0;
       padding: 0;
@@ -19,29 +19,43 @@
     .playfair {
       font-family: 'Playfair Display', serif;
     }
-    .main-content {
+    .main-layout {
+      display: flex;
+      flex-direction: column;
       min-height: calc(100vh - 128px); /* Adjust for header (64px) and footer (64px) */
+    }
+    .locations-section {
+      background-color: #000000;
+      padding: 2rem;
+      text-align: center;
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
     }
-    .metal-image {
+    .image-section {
       width: 100%;
-      height: calc(100vh - 128px); /* Fill remaining space */
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .image-section img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      position: relative;
-      top: 0;
+      display: block;
+    }
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d3d3d3;
+      background-color: #1a1a1a;
     }
     @media (max-width: 768px) {
-      .main-content {
+      .locations-section {
         padding: 1rem;
-      }
-      .metal-image {
-        height: auto; /* Scale on mobile */
-        min-height: calc(100vh - 128px);
       }
     }
   </style>
@@ -58,17 +72,22 @@
         <li><a href="index.html" class="hover:gold-accent transition">Home</a></li>
         <li><a href="about.html" class="hover:gold-accent transition">About Us</a></li>
         <li><a href="services.html" class="hover:gold-accent transition">Services</a></li>
-        <li><a href="location.html" class="hover:gold-accent transition">Location</a></li>
+        <li><a href="locations.html" class="hover:gold-accent transition">Location</a></li>
         <li><a href="contact.html" class="hover:gold-accent transition">Contacts</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <h1 class="text-4xl md:text-5xl font-bold gold-accent mb-4 playfair">Global Metal Trade</h1>
-    <p class="text-2xl md:text-3xl mb-8 uppercase playfair">ROOTED IN INTEGRITY AND EXCELLENCE</p>
-    <img src="assets/metals.jpg.jpg" alt="Metal Showcase" class="metal-image" loading="lazy">
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Locations Section -->
+    <section class="locations-section">
+      <h1 class="text-3xl font-bold gold-accent mb-6 playfair">Find Us</h1>
+      <div class="image-section">
+        <img src="assets/globl-locations.jpg.jpg" alt="Global Locations Map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <div class="image-placeholder hidden">Please add 'global-locations.jpg' to the assets folder.</div>
+      </div>
+    </section>
   </div>
 
   <!-- Footer -->
