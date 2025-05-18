@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amaraye Trading FZE LLC - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+    }
+    .gold-accent {
+      color: #d4af37;
+    }
+    .main-content {
+      min-height: calc(100vh - 128px); /* Adjust for header (64px) and footer (64px) */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .metal-image {
+      width: 100%;
+      height: calc(100vh - 128px); /* Fill remaining space */
+      object-fit: cover;
+      position: relative;
+      top: 0;
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        padding: 1rem;
+      }
+      .metal-image {
+        height: auto; /* Scale on mobile */
+        min-height: calc(100vh - 128px);
+      }
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-black shadow sticky top-0 z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/logo.jpg.jpg" alt="Amaraye Trading Logo" class="h-12 mr-2 max-w-full" loading="lazy">
+        <div class="text-2xl font-bold gold-accent">Amaraye Trading FZE LLC</div>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:gold-accent transition">Home</a></li>
+        <li><a href="about.html" class="hover:gold-accent transition">About Us</a></li>
+        <li><a href="services.html" class="hover:gold-accent transition">Services</a></li>
+        <li><a href="contact.html" class="hover:gold-accent transition">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="text-4xl md:text-5xl font-bold gold-accent mb-4">Global Metal Trade</h1>
+    <p class="text-2xl md:text-3xl mb-8 uppercase">ROOTED IN INTEGRITY AND EXCELLENCE</p>
+    <img src="assets/metals.jpg.jpg" alt="Metal Showcase" class="metal-image" loading="lazy">
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-4 text-center">
+    <p>© 2025 Amaraye Trading FZE LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>

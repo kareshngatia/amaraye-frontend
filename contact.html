@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amaraye Trading FZE LLC - Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000000;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+    }
+    .gold-accent {
+      color: #d4af37;
+    }
+    .main-layout {
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 64px); /* Adjust for header (64px) and footer */
+    }
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 70vh; /* Increased height */
+      overflow: hidden;
+    }
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 20px; /* Moved to bottom */
+      left: 50%;
+      transform: translateX(-50%); /* Horizontal centering only */
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* For readability */
+    }
+    .contact-section {
+      background-color: #000000;
+      padding: 1.5rem; /* Reduced padding */
+      flex-grow: 1; /* Fill remaining space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+    }
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Equal width for both sections */
+      gap: 2rem;
+      align-items: stretch; /* Ensure sections stretch to same height */
+    }
+    .contact-content > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Distribute content evenly */
+    }
+    #contact-form {
+      max-width: 400px; /* Constrain form width for better alignment */
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      .hero-section {
+        height: 60vh; /* Increased height on mobile */
+      }
+      .contact-section {
+        padding: 0.75rem; /* Reduced padding on mobile */
+      }
+      .contact-content {
+        grid-template-columns: 1fr; /* Stack vertically on mobile */
+      }
+      #contact-form {
+        max-width: 100%; /* Full width on mobile */
+      }
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-black shadow sticky top-0 z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/logo.jpg.jpg" alt="Amaraye Trading Logo" class="h-12 mr-2 max-w-full" loading="lazy">
+        <div class="text-2xl font-bold gold-accent">Amaraye Trading FZE LLC</div>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:gold-accent transition">Home</a></li>
+        <li><a href="about.html" class="hover:gold-accent transition">About Us</a></li>
+        <li><a href="services.html" class="hover:gold-accent transition">Services</a></li>
+        <li><a href="contact.html" class="hover:gold-accent transition">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Hero Section with Image and Overlay Text -->
+    <div class="hero-section">
+      <img src="assets/metals.jpg (2).jpg" alt="Contact Hero Image" class="hero-image" loading="lazy">
+      <div class="hero-text">
+        <h1 class="text-4xl md:text-5xl font-bold gold-accent mb-2">Global Metal Trade</h1>
+        <h2 class="text-2xl md:text-3xl uppercase" style="color: #d3d3d3;">ROOTED IN INTEGRITY AND EXCELLENCE</h2>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-6 gold-accent">Contact Us</h2>
+        <div class="contact-content">
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4 gold-accent">Get in Touch</h3>
+            <p class="text-gray-400 mb-2"><strong>Amaraye Trading FZE LLC</strong></p>
+            <p class="text-gray-400 mb-2">Business Centre, Sharjah Publishing City Free Zone, Sharjah, UAE</p>
+            <p class="text-gray-400 mb-2">Phone: (+254) 709469000</p>
+            <p class="text-gray-400 mb-2">Email: <a href="mailto:info@zamara.co.ke" class="hover:gold-accent">info@zamara.co.ke</a></p>
+            <p class="text-gray-400 mb-2">Website: <a href="http://www.zamaragroup.com" class="hover:gold-accent">www.zamaragroup.com</a></p>
+            <p class="text-gray-400 mb-2">License No: 4311272.01</p>
+            <p class="text-gray-400 mb-2">Formation Date: 26/02/2024</p>
+            <p class="text-gray-400 mb-2">Expiry Date: 25/02/2026</p>
+          </div>
+          <!-- Contact Form -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4 gold-accent">Send a Message</h3>
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input type="text" id="name" class="w-full p-2 border border-gray-600 rounded bg-gray-800 text-white focus:ring-2 focus:ring-gold-accent" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" class="w-full p-2 border border-gray-600 rounded bg-gray-800 text-white focus:ring-2 focus:ring-gold-accent" required>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" rows="3" class="w-full p-2 border border-gray-600 rounded bg-gray-800 text-white focus:ring-2 focus:ring-gold-accent" required></textarea>
+              </div>
+              <button type="submit" class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-4 text-center">
+    <p>© 2025 Amaraye Trading FZE LLC. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Contact Form -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      console.log('Form Submission:', { name, email, message });
+      alert('Message sent successfully! (Logged to console)');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

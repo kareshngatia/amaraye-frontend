@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amaraye Trading FZE LLC - About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000000;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+    }
+    .gold-accent {
+      color: #d4af37;
+    }
+    .black-text {
+      color: #000000;
+    }
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: calc(100vh - 128px); /* Adjust for header (64px) and footer (64px) */
+      gap: 0;
+    }
+    .left-section {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .right-section {
+      background-color: #000000;
+    }
+    .mining-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    ol {
+      margin-left: 1.5rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 768px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+      }
+      .left-section {
+        padding: 1rem;
+      }
+      .mining-image {
+        height: 50vh; /* Reduced height on mobile for better UX */
+      }
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-black shadow sticky top-0 z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/logo.jpg.jpg" alt="Amaraye Trading Logo" class="h-12 mr-2 max-w-full" loading="lazy">
+        <div class="text-2xl font-bold gold-accent">Amaraye Trading FZE LLC</div>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:gold-accent transition">Home</a></li>
+        <li><a href="about.html" class="hover:gold-accent transition">About Us</a></li>
+        <li><a href="services.html" class="hover:gold-accent transition">Services</a></li>
+        <li><a href="contact.html" class="hover:gold-accent transition">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Left Section: Text Content -->
+    <div class="left-section">
+      <h1 class="text-3xl font-bold mb-8 black-text">About Us</h1>
+      <h2 class="text-2xl font-bold mb-4">Powering industries with premium metals for over a decade</h2>
+      <p class="mb-4">At Amaraye Trading FZE LLC we are more than metal traders—we are partners in progress. For over 10 years, we have been at the forefront of the global metals and metal ores supply chain, delivering high-grade metals to clients across sectors including manufacturing, construction, infrastructure and energy.</p>
+      <p class="mb-6">Founded by Dr. Benny Otim with a deep-rooted passion for commerce and industry, our company was built on principles of integrity, precision and long-term relationships.</p>
+      <h2 class="text-2xl font-bold mb-4">We specialize in</h2>
+      <ol>
+        <li>Wholesale of metals and metal ores</li>
+        <li>Wholesale of ferrous and non-ferrous metal ores</li>
+        <li>Wholesale of ferrous and non-ferrous metals in primary forms</li>
+        <li>Wholesale of ferrous and non-ferrous semi-finished metal products</li>
+      </ol>
+    </div>
+
+    <!-- Right Section: Mining Image -->
+    <div class="right-section">
+      <img src="assets/mining operations.jpg.jpg" alt="Mining Operations" class="mining-image" loading="lazy">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-4 text-center">
+    <p>© 2025 Amaraye Trading FZE LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
